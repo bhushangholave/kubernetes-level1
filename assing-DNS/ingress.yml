@@ -1,0 +1,19 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: my-ingress
+  namespace: tools
+spec:
+  rules:
+  - host: guestbook.mstaxx.com
+    http:
+      paths:
+      - backend:
+          serviceName: frontend-production
+          servicePort: 80
+  - host: staging.mstaxx.com
+    http:
+      paths:
+      - backend:
+          serviceName: frontend-staging
+          servicePort: 80

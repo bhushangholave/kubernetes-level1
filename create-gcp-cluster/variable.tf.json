@@ -1,0 +1,20 @@
+{
+  "variable" : 
+  {
+    "clustername" : {
+      "default" : "gke-cluster"
+    },
+    "machinetype" : {
+      "default" : "g1-small"
+    },
+    "nodecount" : {
+      "default" : 3
+    },
+    "zone" : {
+      "default" : "us-west1-a"
+    },
+    "network" : {
+      "default" : "default"
+    }
+  }
+}
